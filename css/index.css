@@ -1,0 +1,1017 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    border:none;
+}
+i{
+    font-style: normal;
+}
+.gome-topad{
+    background-color: rgb(244, 0, 0);
+    width:100%;
+    /* position: relative; */
+}
+.close-gome-topad .wbox{
+    width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+.close-gome-topad{
+    position: absolute;
+    display: block;
+    padding:6px;
+    top:4px;
+    right:-12px;
+    cursor: pointer;
+}
+.close-gome-topad i{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/ui.png) -60px -446px;
+    text-indent: -99px;
+    overflow: hidden;
+}
+.close-gome-topad:hover{
+    background-color: rgba(90,90, 54, 0.5);
+}
+
+.gome-top a{
+    color: #888;
+}
+.gome-top{
+    width: 100%;
+    position: relative;
+    border-bottom:1px solid #f3f3f3;
+    background: #f8f8f8;
+    height: 30px;
+    color:#5e5e5e;
+    z-index:999;
+}
+.wbox{
+    width: 1200px;
+    margin:0 auto;
+}
+#gome-user{
+    margin-right:12px;
+}
+.gome-top li{
+    float: left;
+    position: relative;
+    font:400 12px/30px Arial,"Microsoft YaHei";
+}
+#gome-user b{
+    color:#5e5e5e
+}
+.gome-top b{
+    font-weight: 400;
+    display: block;
+    padding:0 20px 0 10px;
+    border:1px solid #f8f8f8;
+    border-bottom:0;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+
+.gome-top #gome-mygome{
+    position: relative;
+}
+.gome-top #gome-mygome .public{
+    width: 260px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    background-color: #fff;
+    height: 0px;
+    overflow: hidden;
+    /* transition: all .2s; */
+}
+.gome-top #gome-mygome .public strong{
+    display: block;
+    font-weight: 700;
+    padding: 10px 10px 0;
+    font: 12px/24px Arial,"Microsoft YaHei";
+    color: #888;
+}
+.gome-top #gome-mygome .public strong a{
+    color: #069;
+}
+.gome-top #gome-mygome .public #mygome-order{
+    padding: 0 0 9px;
+    margin: 0 10px;
+    border-bottom: 1px solid #f3f3f3;
+    overflow: hidden;
+}
+.gome-top #gome-mygome .public #mygome-order li{
+    float: left;
+    width: 50%;
+    line-height: 25px;
+    height: 25px;
+}
+.gome-top #gome-mygome .public #mygome-order li a{
+    color: #888;
+}
+.gome-top #gome-mygome .public #mygome-coupon{
+    padding-left: 10px;
+    overflow: hidden;
+}
+.gome-top #gome-mygome .public #mygome-coupon li{
+    float: left;
+    width: 200px;
+    padding: 10px 0;
+    line-height: 14px;
+}
+.gome-top #gome-mygome .public #mygome-coupon li a{
+    color: #888;
+}
+.gome-top #gome-mygome .public #mygome-coupon li ins{
+    display: inline-block;
+    vertical-align: middle;
+    color: #cdcdcd;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 4px;
+}
+.gome-top #gome-mygome .public p{
+    clear: both;
+    background: #f8f8f8;
+    padding: 10px;
+    overflow: hidden;
+    font: 12px/24px Arial,"Microsoft YaHei";
+    color: #888;
+}
+.gome-top #gome-mygome .public #mygome-track{
+    background: #f8f8f8;
+    padding: 0 0 18px 10px;
+    height: 50px;
+    overflow: hidden;
+}
+.gome-top #gome-mygome .public #mygome-track li{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 12px 10px 0;
+    background: url(../images/ui.png) 0 -397px;
+}
+.gome-top #gome-mygome:hover b{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-bottom-color:#fff ;
+}
+.gome-top #gome-mygome:hover .public{
+    height: 240px;
+    border: 1px solid #e6e6e6;
+}
+#gome-enterprise .public-dropdown{
+    width: 200px;
+    position: absolute;
+    padding: 0;
+    left: auto;
+    right: 0;
+    top: 30px;
+    background: #fff;
+    height: 0px;
+    overflow: hidden;
+    /* transition: all .2s; */
+}
+#gome-enterprise .public-dropdown a{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background: url(../images/ui.png) 0 -1511px;
+}
+#gome-enterprise:hover b{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-bottom-color:#fff ;
+}
+#gome-enterprise:hover .public-dropdown{
+    height: 200px;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+}
+#gome-service .public-dropdown{
+    width: 210px;
+    padding-top: 0;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    /* transition: all .2s; */
+}
+#gome-service .public-dropdown p{
+    font: 700 12px/24px Arial,"Microsoft YaHei";
+    color: #898989;
+}
+#gome-service .public-dropdown ul{
+    padding: 0 0 10px;
+    height: 48px;
+    overflow: hidden;
+}
+#gome-service .public-dropdown ul li{
+    float: left;
+    font: 12px/24px Arial,"Microsoft YaHei";
+    width: 33%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#gome-service .public-dropdown .service{
+    color: #fff;
+    background: #dd00a7;
+    text-align: center;
+    display: block;
+    line-height: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 4px;
+}
+#gome-service .public-dropdown .service em{
+    font-size: 19px;
+    line-height: 25px;
+    height: 25px;
+    color: #fff;
+    background: 0 0;
+}
+#gome-service:hover b{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-bottom-color:#fff ;
+}
+#gome-service:hover .public-dropdown{
+    height: 193px;
+    border: 1px solid #e6e6e6;
+    padding:10px 15px;
+}
+#gome-sitemap .public-dropdown{
+    width: 1198px;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    height: 0px;
+    right: -100px;
+    overflow: hidden;
+}
+#gome-sitemap .public-dropdown dl{
+    float: left;
+    padding: 0 15px 0 40px;
+    border-left: 1px solid #f3f3f3;
+    margin: 15px 0;
+}
+#gome-sitemap .public-dropdown dl.none{
+    border: none;
+}
+#gome-sitemap .public-dropdown dl dt{
+    font: 700 14px/14px Arial,"Microsoft YaHei";
+    margin: 0 0 14px;
+}
+#gome-sitemap .public-dropdown dl dd{
+    overflow: hidden;
+    min-height: 120px;
+}
+#gome-sitemap .public-dropdown dl dd ul{
+    float: left;
+    width: 75px;
+}
+#gome-sitemap .public-dropdown dl dd ul li{
+    width: 100%;
+    text-align: left;
+    font: 12px/24px Arial,"Microsoft YaHei";
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#gome-sitemap:hover b{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-bottom-color: #fff;
+}
+#gome-sitemap:hover .public-dropdown{
+    border: 1px solid #e6e6e6;
+    height: 178px;
+    padding: 10px 0;
+}
+#gome-phone .public-dropdown{
+    position: absolute;
+    top: 30px;
+    padding: 0;
+    left: auto;
+    right: 0;
+    width: auto;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+}
+#gome-phone .public-dropdown a{
+    display: inline-block;
+    height: 170px;
+    width: 130px;
+    background: url(../images/ui.png) 0 -799px;
+}
+#gome-phone:hover b{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-bottom-color: #fff;
+}
+#gome-phone:hover .public-dropdown{
+    height: 170px;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+}
+#loginDiv-name a{
+    display: inline;
+    color:#5e5e5e
+}
+#loginDiv-name i{
+    position: absolute;
+    top:12px;
+    right:8px;
+    background-position: -62px -433px;
+    width: 7px;
+    height: 4px;
+    overflow: hidden;
+}
+.gome-top i, .gome-top em{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../images/ui.png);
+    background-position: 0 -41px;
+    color:#dd00a7;
+}
+#gome-user:hover{
+    background-color: #fff;
+}
+#gome-user:hover #loginDiv-name i{
+    background-position: -55px -433px;
+}
+#gome-user .public-dropdown{
+    width: 290px;
+    position: absolute;
+    top:30px;
+    background-color: #fff;
+    left:0;
+    overflow: hidden;
+}
+#user-name{
+    padding:5px 0 20px;
+    overflow: hidden;
+}
+#user-name i, #user-name i img{
+    float: left;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+}
+#user-name i{
+    background-position: 0 -337px;
+}
+#user-name div{
+    float:left;
+    font:400 12px/20px Arial,"Microsoft YaHei";
+    padding:0 0 0 15px;
+    width: 220px;
+}
+#user-name .user-name-login{
+    padding-top:20px;
+}
+#user-name p{
+    color:#888;
+    width: 100%;
+    line-height: 16px;
+    overflow: hidden;
+}
+#user-name .user-name-login a{
+    color:#069;
+}
+#user-icon{
+    border-top:1px solid #f3f3f3;
+    padding-top:15px;
+    position: relative;
+    height: 100px;
+}
+#user-icon p{
+    line-height: 18px;
+}
+#user-icon p a{
+    color:#ccc;
+    float: right;
+}
+#user-icon .user-icon-prev{
+    left:0;
+}
+#user-icon .user-icon-prev, #user-icon .user-icon-next{
+    position: absolute;
+    top:54px;
+    width: 16px;
+    height: 29px;
+    cursor: pointer;
+    background: url(../images/ui.png) -60px -357px;
+    display: inline-block;
+}
+#user-icon .user-icon-next{
+    right:0;
+    background-position: -76px -357px;
+}
+.public-dropdown{
+    /* border:1px solid #f3f3f3; */
+}
+#user-icon div{
+    margin:10px 25px 0;
+    visibility: hidden;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    left:0;
+    width: 240px;
+}
+#user-icon div ul{
+    margin:0;
+    padding:0;
+    position: relative;
+    list-style-type: none;
+    z-index: 1;
+    width: 720px;
+    left:0;
+    height: 70px;
+    overflow: hidden;
+}
+#user-icon div ul li{
+    overflow: hidden;
+    float:left;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+}
+#user-icon li a{
+    color:#ccc;
+}
+#user-icon i{
+    display: block;
+    height: 40px;
+    background: 0 0;
+    font-size: 40px;
+    line-height: 40px;
+}
+#gome-top-right{
+    float: right;
+}
+.gome-link{
+    height: 30px;
+    overflow: hidden;
+    margin:0;
+}
+.gome-link a{
+    margin-right:10px;
+    line-height: 32px;
+}
+.gome-top a{
+    color:#888;
+}
+.gome-top b i{
+    position: absolute;
+    top:12px;
+    right:8px;
+    background-position: -62px -433px;
+    width: 7px;
+    height: 4px;
+    overflow: hidden;
+}
+#gome-service b em{
+    font-size: 17px;
+    color:#dd00a7;
+    background: 0 0;
+    line-height: 30px;
+    height: 30px;
+    top:0;
+}
+#gome-mygome{
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+}
+
+
+#gome-head{
+    position: relative;
+    height: 120px;
+    vertical-align: middle;
+    z-index: 980;
+}
+#logo a{
+    display: block;
+    width: 125px;
+    height: 56px;
+    background: url(../images/logo.png) 0 0 no-repeat;
+    overflow: hidden;
+}
+#logo{
+    float: left;
+    margin:32px 10px 0 0;
+}
+#logo-gif{
+    float: left;
+    margin:35px 0 0 10px;
+}
+#logo-gif img{
+    width: 100px;
+    height: 50px;
+}
+.topSearch{
+    position: relative;
+    width: 500px;
+    top:32px;
+    z-index: 91;
+    left:385px;
+}
+.searchbox{
+    border:1px solid #dd00a7;
+    position: relative;
+    font-size: 14px;
+    height: 30px;
+    background-color: #fff;
+}
+#search-type-dropdown{
+    position: absolute;
+    top:0;
+    left:0;
+    color:#A5A5A5;
+    float: left;
+    width: 62px;
+    height: 30px;
+    line-height: 30px;
+}
+#search-type-dropdown .search-type{
+    position: relative;
+    width: 42px;
+    padding:0 10px;
+    height: 30px;
+    border-right:1px solid #dd00a7;
+}
+#search-type-dropdown .search-type i{
+    position: absolute;
+    width: 11px;
+    height: 7px;
+    right:9px;
+    top:11px;
+    background: url(../images/ui.png) -145px -1469px;
+}
+#search-type-dropdown .search-type-list{
+    position: absolute;
+    left:-1px;
+    right:-1px;
+    top:30px;
+    border:1px solid #dd00a7;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+#search-type-dropdown .search-type-item{
+    width: 42px;
+    padding:0 10px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.searchbox label{
+    font-family: 'microsoft yahei';
+    position: absolute;
+    top:0;
+    left:72px;
+    right:110px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    color:#bbb;
+    cursor: pointer;
+}
+.searchbox input{
+    border:none;
+    width: 336px;
+    line-height: 28px;
+    float:left;
+    font-size: 14px;
+    font-family: arial;
+    color:#5E5E5E;
+    background-color: transparent;
+    position: absolute;
+    top:0; 
+    left: 68px;
+}
+input{
+    outline: 0;
+}
+.searchbox button{
+    width: 90px;
+    height: 30px;
+    border:none;
+    cursor: pointer;
+    float: right;
+    background-color: #dd00a7;
+    font:16px/30px 'microsoft yahei';
+    color:#fff;
+    letter-spacing: 2px;
+    text-indent: 0;
+}
+.voice-search{
+    margin-right: 3px;
+    opacity: .55;
+    float: right;
+    padding:5px 0;
+    cursor: pointer;
+    width: 15px;
+    height: 20px;
+    background: url(../images/下载.png) no-repeat no-repeat center;
+    background-size: 13px 19px;
+}
+.hotkeyword{
+    margin:6px 0 0;
+    overflow: hidden;
+    line-height: 14px;
+    height: 14px;
+    font-size: 12px;
+    width:100%;
+    position: absolute;
+    top:34px;
+}
+.hotkeyword a{
+    display: inline-block;
+    margin-right:5px;
+    line-height: 14px;
+    font-family: 'microsoft yahei';
+    color: #A5A5A5;
+}
+.mygome-side{
+    position: absolute;
+    right:0;
+    top:32px;
+    z-index: 92;
+    width: 240px;
+}
+.topmenu{
+    float:right;
+    z-index:96;
+    position: relative;
+    font-size: 12px;
+}
+.topmenu li{
+    float: left;
+    vertical-align: middle;
+    position: relative;
+}
+.shopcartbox .cartlinkbox{
+    display: inline-block;
+    padding:5px 20px 0 45px;
+    line-height: 34px;
+    height: 34px;
+    width: 75px;
+}
+.cartlinkbox .menulink{
+    border:none;
+    margin:1px;
+}
+.topmenu a{
+    color:#5E5E5E;
+}
+.i-cart{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background: url(../images/ui.png) -100px -701px;
+    top:11px;
+    left:10px;
+}
+.shopnum{
+    position: absolute;
+    height: 18px;
+    line-height: 18px;
+    padding:0 3px;
+    top:-18px;
+    text-align: center;
+    left:15px;
+    background-color: #A5A5A5;
+    color:#fff;
+    font-weight: 700;
+    width: 14px;
+}
+em{
+    font-style: normal;
+}
+.shopnum i{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border:4px dashed transparent;
+    border-color:transparent transparent transparent #A5A5A5;
+    border-right:0;
+    border-left-style: solid;
+    overflow: hidden;
+    bottom:-4px;
+    left:5px;
+}
+
+
+
+#gome-help{
+    margin-top:30px;
+    width: 1200px;
+    margin:15px auto 0;
+    overflow: hidden;
+}
+#gome-help ul{
+    background-color: #f5f5f5;
+    padding:15px 0;
+    overflow: hidden;
+}
+#gome-help li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+#gome-help i{
+    display: inline-block;
+    width: 40px;
+    height: 42px;
+    background: url(../images/ui.png);
+    vertical-align: middle;
+    margin-right:10px;
+}
+#gome-help i.icon-pz{
+    background-position: 0 -1469px;
+}
+#gome-help a{
+    line-height: 40px;
+    font:700 18px/37px Arial,"Microsoft YaHei";
+    color:#404040;
+}
+.foot-titlt-dot{
+    margin:0 16px;
+    color:#ccc;
+    width: 3px;
+    height: 10px;
+    background: url(../images/ui.png);
+    vertical-align: middle;
+    background-position: -120px -1489px;
+}
+#gome-help a.sec-title{
+    font-weight: 400;
+}
+#gome-help i.icon-dj{
+    background-position: -40px -1469px;
+}
+#gome-help i.icon-sd{
+    background-position: -80px -1469px;
+}
+.gome-help-box{
+    width:110%;
+    margin-left:-5%;
+    overflow: hidden;
+}
+#gome-help dl{
+    float:left;
+    width:9%;
+    padding:15px 0 0 125px;
+    white-space: nowrap;
+}
+#gome-help dt{
+    font:16px/25px Arial,"Microsoft YaHei";
+    color:#5e5e5e;
+}
+#gome-help dl ul{
+    background: 0 0;
+    padding:0;
+}
+#gome-help dl li{
+    float:none;
+    width:100%;
+    text-align: left;
+}
+#gome-help dl a{
+    font:12px/22px Arial,"Microsoft YaHei";
+    color:#a5a5a5;
+    padding:0;
+}
+#gome-foot{
+    border-top:1px solid #dd00a7;
+    background-color: #f7f7f7;
+    margin-top:15px;
+    zoom: 1;
+}
+#gome-foot-box{
+    position: relative;
+    width:1200px;
+    margin:0 auto;
+    padding:20px 0 0;
+    background-color: #f7f7f7;
+}
+#gome-foot span{
+    display: inline-block;
+    padding:0 50px 40px 0;
+}
+#gome-foot span i{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/ui.png) 0 -135px;
+    float: left;
+}
+#gome-foot span p{
+    margin-left:10px;
+    font:12px/20px Arial,"Microsoft YaHei";
+    float: left;
+    width:210px;
+    overflow: hidden;
+    height: 45px;
+}
+#gome-foot p{
+    color:#999;
+    font:12px/22px Arial;
+}
+#gome-foot span strong{
+    color:#333;
+    display: block;
+    font:400 16px/25px Arial,"Microsoft YaHei";
+}
+#gome-foot span a{
+    color:#999;
+}
+#gome-foot span.ued i{
+    background-position: -45px -135px;
+}
+#gome-foot .qrcode-section{
+    position: absolute;
+    right:-10px;
+    top:15px;
+    font-size: 0;
+}
+
+
+#gome-foot em.code-sm{
+    width: 50px;
+    margin:0 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+#gome-foot em i{
+    background: url(../images/ui.png);
+    display: inline-block;
+}
+#gome-foot em.code-sm i, #gome-foot em.code-sm i img{
+    width: 40px;
+    height: 25px;
+}
+#gome-foot em.wx i{
+    background-position: -105px -135px;
+}
+#gome-foot em div{
+    position: absolute;
+    left:-50px;
+    bottom:54px;
+    z-index: 10000;
+    padding:10px;
+    border:1px solid #eee;
+    background-color: #fff;
+    display: none;
+} 
+#gome-foot .wx:hover div{
+    display: block;
+}
+#gome-foot .wap:hover div{
+    display: block;
+}
+
+#gome-foot em div i.icon-triangle{
+    position: absolute;
+    height: 8px;
+    width: 13px;
+    left:68px;
+    background: url(../images/ui.png) -67px -127px !important;
+    top:100%;
+}
+#gome-foot em div img{
+    display: block;
+    width: 171px;
+}
+img{
+    border:none;
+    vertical-align: middle;
+}
+#gome-foot em.wap i{
+    background-position: -185px -135px;
+}
+#gome-foot em.code-bg{
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+#gome-foot em.code-bg p{
+    text-align: center;
+    margin-left:4px;
+}
+#gome-foot em.code-bg i, #gome-foot em.code-bg img{
+    width: 90px;
+    height: 90px;
+}
+#gome-foot ul{
+    float: left;
+}
+#gome-foot li{
+    float:left;
+    font:12px/22px Arial,"Microsoft YaHei";
+    padding:0 13px 0 0;
+    color:#ccc;
+    white-space: nowrap;
+}
+#gome-foot a{
+    color:#666;
+}
+#gome-foot .interDrug{
+    color:#999;
+}
+#gome-foot .tw-w-ico-wrap{
+    position: relative;
+    padding-left:23px;
+}
+#gome-foot .tw-w-ico-wrap .tw-w-mark-icon{
+    position: absolute;
+    left:0;
+    top:-3px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/ui.png) 0 -1712px;
+}
+.gome-foot-credit{
+    border-top:1px solid #e6e6e6;
+    margin-top:5px;
+    padding:10px 0 25px;
+    overflow: hidden;
+}
+#gome-foot .bottom{
+    display: flex;
+    flex-direction: column;
+}
+.gome-foot-credit i{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/ui.png) 0 -180px;
+    float: left;
+}
+
+
+.home b{
+    font-weight: 400;
+}
+.gome-foot-credit b{
+    font:12px/18px Arial,"Microsoft YaHei";
+    display: block;
+    float: left;
+    color:#999;
+    padding:0 20px 0 5px;
+    width: 60px;
+}
+.gome-foot-credit .credit-xypj i{
+    background-position: -35px -180px;
+}
+.gome-foot-credit .credit-cxwz i{
+    background-position: -70px -180px;
+}
+.gome-foot-credit .credit-hdjc i{
+    background-position: -105px -180px;
+}
+.gome-foot-credit .credit-wgdj i{
+    background-position: -140px -180px;
+}
+.gome-foot-credit .credit-report i{
+    background-position: -175px -180px;
+}
+.gome-foot-credit .credit-hazar i{
+    background-position: -238px -180px;
+}
+.gome-foot-credit .credit-cxwz b,.credit-wgdj b{
+    padding-top:9px;
+}
+.credit-report b{
+    width: 119px;
+}
+#search-type-dropdown .search-type:hover .search-type-list{
+    display: block;
+}
