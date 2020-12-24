@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.gome-head {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 120px;
+  display: block;
+  z-index: 980;
+}
+
+.gome-head .logo {
+  margin-top: 32px;
+  float: left;
+}
+
+.gome-head .logo .gomologo {
+  display: inline;
+  float: left;
+}
+
+.gome-head .logo .gomologo a {
+  float: left;
+  width: 125px;
+  height: 56px;
+  display: block;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cheap/groupon/1.0.71/css/i/common/gomelogo.png") 0 0 no-repeat;
+  text-indent: -99px;
+  overflow: hidden;
+}
+
+.gome-head .logo .slogan {
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cheap/groupon/1.0.71/css/i/common/gomelogo_sub.png") no-repeat;
+  float: left;
+  width: 125px;
+  height: 56px;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+.gome-head .topsearch {
+  margin-top: 43px;
+  margin-left: 155px;
+  width: 375px;
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+}
+
+.gome-head .topsearch .searchbox {
+  border: 1px solid #dd00a7;
+  position: relative;
+  font-size: 14px;
+  height: 30px;
+  background: #fff;
+}
+
+.gome-head .topsearch .searchbox input {
+  border: none;
+  width: 272px;
+  padding: 5px 5px 5px 10px;
+  line-height: 20px;
+  float: left;
+  font-size: 14px;
+  font-family: arial;
+  color: #5e5e5e;
+  background-color: transparent;
+  outline: none;
+}
+
+.gome-head .topsearch .searchbox button {
+  background: #db19a6;
+  border: 0 none;
+  cursor: pointer;
+  display: inline;
+  float: right;
+  height: 32px;
+  width: 82px;
+  font: 16px/30px "microsoft yahei";
+  color: #fff;
+  outline: none;
+}
+
+.gome-head ul {
+  font-family: "Microsoft Yahei";
+  position: absolute;
+  right: 6px;
+  top: 37px;
+  display: flex;
+}
+
+.gome-head ul li {
+  border-right: 1px solid #e3e3e3;
+  float: left;
+  padding: 0 20px;
+  text-align: center;
+  width: 53px;
+  cursor: pointer;
+}
+
+.gome-head ul li span {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  font-size: 31px;
+  color: #db19a6;
+}
+
+.gome-head ul li p {
+  font-size: 12px;
+}
+
+.gome-head ul li:hover p {
+  color: red;
+}
+
+.type {
+  width: 100%;
+  height: 40px;
+  background-color: #171314;
+}
+
+.type .type-banixn {
+  width: 1200px;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.type .type-banixn .ul1 {
+  height: 40px;
+  display: flex;
+}
+
+.type .type-banixn .ul1 .li1 {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  position: relative;
+}
+
+.type .type-banixn .ul1 .li1 .zhen {
+  width: 160px;
+  padding: 0 20px;
+  height: 40px;
+}
+
+.type .type-banixn .ul1 .li1 .zhen p {
+  line-height: 40px;
+  color: #fff;
+  float: left;
+}
+
+.type .type-banixn .ul1 .li1 .zhen span {
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cheap/groupon/1.0.71/css/i/common/groupbuy_bg.png") repeat scroll;
+  background-position: -109px -420px;
+  display: block;
+  float: right;
+  height: 9px;
+  margin: 17px 0;
+  overflow: hidden;
+  width: 13px;
+}
+
+.type .type-banixn .ul1 .li1 .yin {
+  position: absolute;
+  width: 200px;
+  top: 40px;
+  display: none;
+  height: 400px;
+}
+
+.type .type-banixn .ul1 .li1 .yin ul {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.type .type-banixn .ul1 .li1 .yin ul li {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background-color: #000000;
+  opacity: 0.8;
+  padding: 10px 0;
+  border-top: 1px solid #5e5e5e;
+  cursor: pointer;
+}
+
+.type .type-banixn .ul1 .li1 .yin ul li:hover {
+  color: #cc0000;
+}
+
+.type .type-banixn .ul1 .li1:hover span {
+  background-position: -109px -435px;
+}
+
+.type .type-banixn .ul1 .li1:hover .yin {
+  display: block;
+}
+
+.type .type-banixn .ul1 .li2 {
+  width: 850px;
+  height: 40px;
+  display: flex;
+}
+
+.type .type-banixn .ul1 .li2 p {
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.type .type-banixn .ul1 .li2 .p1 {
+  width: 100px;
+  background-color: #c00;
+  max-width: 132px;
+}
+
+.type .type-banixn .ul1 .li2 .p2 {
+  width: 132px;
+}
+
+.type .type-banixn .ul1 .li3 {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.type .type-banixn .ul1 .li3 .liulan {
+  float: left;
+  height: 40px;
+  position: relative;
+  z-index: 100;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon {
+  display: block;
+  height: 40px;
+  position: relative;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon .sp1 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 7px 15px 0;
+  cursor: pointer;
+  height: 33px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon .yin2 {
+  position: absolute;
+  top: 40px;
+  left: -101px;
+  display: none;
+  width: 250px;
+  background-color: #fff;
+  height: 95px;
+  border: 1px solid #ccc;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon .yin2 h2 {
+  font-size: 14px;
+  line-height: 34px;
+  padding-left: 10px;
+  width: 240px;
+  color: #c00;
+  height: 34px;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon .yin2 p {
+  width: 250px;
+  height: 61px;
+  font-size: 12px;
+  color: #888888;
+  line-height: 61px;
+  text-align: center;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon .yin2 p span {
+  color: #069;
+  font-size: 12px;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon .yin223 {
+  left: -151px;
+}
+
+.type .type-banixn .ul1 .li3 .liulan-icon .sp1:hover {
+  color: #c00;
+}
+
+.type .type-banixn .ul1 .li3 .sp11:hover + .yin22 {
+  display: block;
+}
+
+.type .type-banixn .ul1 .li3 .sp22:hover + .yin223 {
+  display: block;
+}
+
+.group {
+  height: 400px;
+  background-color: #8e1b1e;
+}
+
+.group .group-banxin {
+  height: 400px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.group .group-banxin .left {
+  float: left;
+  width: 900px;
+  height: 400px;
+}
+
+.group .group-banxin .left img {
+  width: 100%;
+  height: 100%;
+}
+
+.group .group-banxin .right {
+  float: left;
+  width: 300px;
+  height: 400px;
+}
+
+.group .group-banxin .right h2 {
+  padding: 0 20px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: normal;
+  background-color: #fff;
+  color: #333;
+}
+
+.group .group-banxin .right .swiper-container .swiper-button-next {
+  transform: scale(0.5);
+}
+
+.group .group-banxin .right .swiper-container .swiper-button-prev {
+  transform: scale(0.5);
+}
+
+.group .group-banxin .right .swiper-container .swiper-pagination-bullet {
+  background: #c00;
+}
+
+.groupbox {
+  background: #ededed;
+  width: 100%;
+}
+
+.groupbox .groupbanixn {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+  background: #ededed;
+}
+
+.groupbox .groupbanixn .groupbrand h2 {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.groupbox .groupbanixn .groupbrand ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.groupbox .groupbanixn .groupbrand ul img {
+  display: block;
+}
+
+.groupbox .groupbanixn .classtitle {
+  border-bottom: 3px solid #535353;
+  width: 1200px;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+}
+
+.groupbox .groupbanixn .classtitle h2 {
+  float: left;
+  width: 100px;
+}
+
+.groupbox .groupbanixn .classtitle ul {
+  padding-left: 50px;
+  float: left;
+  display: flex;
+}
+
+.groupbox .groupbanixn .classtitle ul li {
+  cursor: pointer;
+  width: 130px;
+  text-align: center;
+}
+
+.groupbox .groupbanixn .classtitle ul .li-active1 {
+  background-color: #535353;
+  color: #fff;
+}
+
+.groupbox .groupbanixn .classtitle ul li:hover {
+  color: #fff;
+  background-color: #535353;
+}
+
+.groupbox .groupbanixn .classtitle a {
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+  color: #333;
+}
+
+.groupbox .groupbanixn .classimg ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.groupbox .groupbanixn .classimg ul li {
+  width: 291px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_img {
+  width: 291px;
+  height: 291px;
+  text-align: center;
+  display: block;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_img img {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 260px;
+  height: 260px;
+  display: block;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_info {
+  display: block;
+  font-weight: 400;
+  overflow: hidden;
+  height: 48px;
+  line-height: 24px;
+  margin: 7px 0;
+  padding: 0 14px;
+  color: #5e5e5e;
+  font-size: 14px;
+  text-align: left;
+  font-family: "Microsoft Yahei";
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_info a {
+  color: #333;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price {
+  border: 1px solid red;
+  width: 289px;
+  height: 50px;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left {
+  width: 188px;
+  float: left;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left .price {
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  color: red;
+  padding-top: 2px;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left .price .now {
+  line-height: 25px;
+  color: red;
+  font: 700 18px Arial;
+  display: inline-block;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left .price .cost {
+  font-size: 12px;
+  color: #999;
+  display: inline-block;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left .count {
+  font-size: 12px;
+  font-weight: 400;
+  height: 21px;
+  line-height: 21px;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left .count .prencent {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #5e5e5e;
+  display: inline-block;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left .count .sale {
+  width: 100px;
+  height: 7px;
+  background: #ccc;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-left .count .sale span {
+  background: red;
+  height: 7px;
+  position: absolute;
+  display: inline-block;
+}
+
+.groupbox .groupbanixn .classimg ul li .prod_price .prod-right {
+  width: 91px;
+  height: 50px;
+  background: #c00;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font: 400 16px/50px "Microsoft Yahei";
+  cursor: pointer;
+}

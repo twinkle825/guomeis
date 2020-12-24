@@ -1028,6 +1028,17 @@ img:hover {
   margin-top: 60px;
 }
 
+.goshoping .go-banxin .list span:hover {
+  background-color: #91a2f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.goshoping .go-banxin .list .span-active {
+  color: #fff;
+  background-color: #9da9e5;
+}
+
 .goshoping .go-banxin .cont {
   overflow: hidden;
   padding-top: 20px;
@@ -1041,6 +1052,10 @@ img:hover {
   width: 600px;
   float: left;
   border: 1px solid #ccc;
+}
+
+.goshoping .go-banxin .cont .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 600px;
 }
 
 .goshoping .go-banxin .cont .swiper-container .swiper-wrapper .swiper-slide span {
@@ -1085,6 +1100,7 @@ img:hover {
 
 .goshoping .go-banxin .cont .cont-right ul li img {
   display: block;
+  width: 162px;
   border: 1px solid #e6e6e6;
 }
 

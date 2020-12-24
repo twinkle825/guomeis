@@ -238,19 +238,19 @@ var hotpic = {
             "lunbo": [
                 {
                     "img": "https://gfs10.gomein.net.cn/T11K_gBXD_1RCvBVdK.jpg",
-                    "cont": "￥4199"
+                    "cont": "4199"
                 },
                 {
                     "img": "https://gfs12.gomein.net.cn/T13iZbBQ_v1RCvBVdK.jpg",
-                    "cont": "￥1399"
+                    "cont": "1399"
                 },
                 {
                     "img": "https://gfs12.gomein.net.cn/T1mtxgBCV_1RCvBVdK.jpg",
-                    "cont": "￥1799"
+                    "cont": "1799"
                 },
                 {
                     "img": "https://gfs12.gomein.net.cn/T1.aVbB7E_1RCvBVdK.jpg",
-                    "cont": "￥4199"
+                    "cont": "4199"
                 },
             ],
             "simg": [
