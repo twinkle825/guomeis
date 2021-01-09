@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width:100%;
+    border-bottom:1px solid red;
+}
+#gome-head{
+    width: 1200px;
+    margin:0 auto;
+    height: 120px;
+    z-index: 980;
+}
+#logo{
+    margin:18px 40px 0 0;
+    float: left;
+}
+#logo a{
+    display: block;
+    overflow: hidden;
+    background: url(../images/registerlogo.png) no-repeat;
+    width: 300px;
+    height: 62px;
+    margin-top:16px;
+}
+.step-progress{
+    position: relative;
+    width: 376px;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+    margin:0 auto;
+}
+.step-slider{
+    background-color: #fff;
+    margin:95px 0 40px;
+    height: 50px;
+}
+.step-slider ul{
+    float: left;
+    height: 3px;
+    width:1005；
+}
+.step-li1{
+    margin-left: 35px;
+    margin-right: 40px;
+}
+.step-slider li{
+    float: left;
+    height: 3px;
+    background-color: #e0e0e0;
+}
+#container .step-slider li{
+    width: 133px;
+}
+.step-content{
+    width: 400px;
+    margin-left: 25px;
+    margin-top:100px;
+}
+.form-group{
+    position: relative;
+    margin-bottom:30px;
+    clear: both;
+}
+.form-group input.form-control{
+    width: 300px;
+    padding:12px 10px;
+    border:1px solid #ccc;
+    color:#999;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+}
+input{
+    outline: 0;
+}
+.form-group i.close{
+    top:18px;
+    position: absolute;
+    left: 274px;
+    width: 11px;
+    height: 11px;
+    background-image: url(../images/newRegister.png);
+    background-position: -32px 0;
+    cursor: pointer;
+    display: none;
+}
+.C_err_tips{
+    position: absolute;
+    color:#ff4c4c;
+    font-size: 13px;
+}
+.form-group-submit{
+    margin:50px 0 20px;
+}
+a.button{
+    display: inline-block;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB",HeitiSC,"WenQuanYi Micro Hei",sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    padding:9px 10px;
+    font-size: 18px;
+    color:#fff;
+    background-color: #ff4c4c;
+    border:1px solid #ee3b3b;
+    text-decoration: none;
+}
+.login-title{
+    position: absolute;
+    top:50px;
+    right: 390px;
+    font-size: 12px;
+}
+.login-title a{
+    margin-left:3px;
+    font-size: 12px;
+    color:#2875cc;
+    text-decoration: none;
+}

@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./public//js/vue.min.js"></script> -->
+    <link rel="stylesheet" href="../static/css/detail.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.js"></script>
+    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <title>商品详情</title>
+</head>
+
+<body>
+    <div id="app" class="detail car-container">
+        <!-- 顶部图片 -->
+        <div class="top">
+            <div class="top-bg wrap">
+                <a href="javascript:;" class="pic">
+                    <img src="../static/images/top-bg.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="close-btn">
+                    <i>关闭</i>
+                </a>
+            </div>
+        </div>
+        <!-- 顶部导航 -->
+        <div class="gome-topnav">
+            <div class="top-nav wrap">
+                <ul class="left">
+                    <li id="gome-entry">
+                        <a href="javascript:;">
+                            <i></i>
+                            国美首页
+                        </a>
+                    </li>
+                    <li class="gome-spacer"></li>
+                    <li id="gome-user">
+                        <b>
+                            <a href="javascript:;">国美会员</a>
+                            <i></i>
+                        </b>
+                    </li>
+                    <li id="login-link">
+                        <a href="javascript:;" class="login">登录</a>
+                        <a href="javascript:;" class="register">
+                            注册有礼
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right clearfix">
+                    <li id="gome-link">
+                        <a href="javascript:;">我的订单</a>
+                    </li>
+                    <li id="gome-mygome">
+                        <b>
+                            <a href="javascript:;">我的国美</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <strong>我的国美，
+                                <a href="javascript:;">请登录！</a>
+                            </strong>
+                            <ul id="mygome-order">
+                                <li>
+                                    <a href="javascript:;">待处理订单</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">我的收藏</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">个人资料</a>
+                                </li>
+                                <li>
+                                    <a href="javacript:;">我的美店</a>
+                                </li>
+                            </ul>
+                            <ul id="mygome-coupon">
+                                <li><a href="javascript:;">我的优惠券</a></li>
+                            </ul>
+                            <p>足迹</p>
+                            <ul id="mygome-track">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gome-spacer"></li>
+                    <li id="gome-enterprise">
+                        <b>
+                            <a href="javascript:;">
+                                企业采购
+                            </a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <a href="javascript:;"></a>
+                        </div>
+                    </li>
+                    <li id="gome-service">
+                        <b>
+                            <em></em>
+                            <a href="javascript:;">服务中心</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <p>
+                                <a href="javascript:;">用户服务</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">售后服务</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">帮助服务</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">新手指南</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">客服服务</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">用户注销</a>
+                                </li>
+
+                            </ul>
+                            <p>
+                                <a href="javascript:;">商家服务</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">招商合作</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">商家登录</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">广告平台</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">平台规则</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">商家培训</a>
+                                </li>
+
+                            </ul>
+                            <a href="" class="service">
+                                <em class=""></em>
+                                在线客服
+                            </a>
+                        </div>
+                    </li>
+                    <li id="gome-sitemap">
+                        <b>
+                            <a href="javascript:;">网站导航</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <dl class="none">
+                                <dt>主题销售</dt>
+                                <dd>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">真划算</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">抢购</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">美家致选</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">家电城</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">服饰城</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">国美超市</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">品牌街</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">智能</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">今日特卖</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">新品抢先</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">家具家装</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>特色分类</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="javascript:;">
+                                                电视影音
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                冰洗
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                洗衣机
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                空调
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                厨卫生活
+                                            </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="javascript:;">
+                                                手机
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                数码
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                电脑办公
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                精品配件
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                汽车
+                                            </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="javascript:;">
+                                                住宅家居
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                家装建材
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                家居日用
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                床品家纺
+                                            </a></li>
+
+                                    </ul>
+                                    <ul>
+                                        <li><a href="javascript:;">
+                                                服饰鞋帽
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                运动户外
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                箱包奢品
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                钟表首饰
+                                            </a></li>
+
+                                    </ul>
+                                    <ul>
+                                        <li><a href="javascript:;">
+                                                食品酒水
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                母婴玩具
+                                            </a></li>
+                                        <li><a href="javascript:;">
+                                                美妆个护
+                                            </a></li>
+
+
+                                    </ul>
+
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>便捷服务</dt>
+                                <dd>
+                                    <ul>
+
+                                        <li><a href="javascript:;">话费充值</a></li>
+                                        <li><a href="javascript:;">美店</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="javascript:;">流量充值</a></li>
+                                        <li><a href="javascript:;">上门服务</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>更多热点</dt>
+                                <dd>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">加盟国美</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">招商合作</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">企业采购</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>国美旗下</dt>
+                                <dd>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">国美管家</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="gome-spacer"></li>
+                    <li id="gome-phone">
+                        <b>
+                            <em></em>
+                            <a href="javascript:;">手机国美</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <a href="javascript:;"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 搜索框 -->
+        <div class="gome-head wrap clearfix">
+            <div id="logo">
+                <a href="javascript:;"></a>
+            </div>
+            <div id="logo-gif">
+                <a href="javascript:;">
+                    <img src="../static/images/new vip.jpg" alt="">
+                </a>
+            </div>
+            <div id="topSearch">
+                <div class="searchbox">
+                    <form id="searchForm" action="" method="get">
+                        <div id="search-type-dropdown">
+                            <div class="search-type">
+                                <span>商品</span>
+                                <i></i>
+                            </div>
+                            <ul class="search-type-list">
+                                <li>商品</li>
+                                <li>店铺</li>
+                            </ul>
+                        </div>
+                        <label for="">车载记录仪</label>
+                        <input type="text" name="" id="searchInput">
+                        <button class="search-btn">搜索</button>
+                    </form>
+                    <a href="javascript:;" class="mk">
+                        <div class="voice-search"></div>
+                    </a>
+                </div>
+                <div class="hotkeyword">
+                    <a href="javascript:;">机油</a>
+                    <a href="javascript:;">行车记录仪</a>
+                    <a href="javascript:;">安全预警仪</a>
+                    <a href="javascript:;">滤清器</a>
+                    <a href="javascript:;">儿童安全座椅</a>
+                    <a href="javascript:;">洗车机/水枪</a>
+                    <a href="javascript:;">雨刷</a>
+                    <a href="javascript:;">冷暖箱</a>
+                    <a href="javascript:;">四季垫</a>
+                    <a href="javascript:;">电源</a>
+                    <a href="javascript:;">商品排行榜</a>
+                    <a href="javascript:;">热门推荐</a>
+                </div>
+            </div>
+            <div class="mygome-side">
+                <ul class="topmenu clearfix">
+                    <li>
+                        <span class="cartlinkbox">
+                            <a href="javascript:;">
+                                <em>
+                                    <span class="shopnum">
+                                        <span id="commerceItemQuantityId">0</span>
+                                        <i></i>
+                                    </span>
+                                </em>
+                                <span id="hdrcarttext">我的购物车</span>
+                                <b></b>
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 全部商品分类 -->
+        <div class="classify">
+            <div class="category wrap clearfix">
+                <div class="sidecategory">
+                    <h2>
+                        <a href="javascript:;">
+                            全部商品分类
+                        </a>
+                        <span></span>
+                    </h2>
+                    <div id="navBox" class="listnav">
+                        <div class="listbg"></div>
+                        <ul class="listnav-ul">
+                            <li class="listnav-item first">
+                                <h3>
+                                    <a href="javascript:;">手机</a>
+                                    <a href="javascript:;">充值</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">相机</a>
+                                    <a href="javascript:;">智能数码</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">电脑</a>
+                                    <a href="javascript:;">办公配件</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">电视</a>
+                                    <a href="javascript:;">影音</a>
+                                    <a href="javascript:;">智能</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">空调</a>
+                                    <a href="javascript:;">冰箱</a>
+                                    <a href="javascript:;">洗衣机</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">厨房卫浴</a>
+                                    <a href="javascript:;">生活电器</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">手机</a>
+                                    <a href="javascript:;">充值</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">手机</a>
+                                    <a href="javascript:;">充值</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">手机</a>
+                                    <a href="javascript:;">充值</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">相机</a>
+                                    <a href="javascript:;">智能数码</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">电脑</a>
+                                    <a href="javascript:;">办公配件</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">电视</a>
+                                    <a href="javascript:;">影音</a>
+                                    <a href="javascript:;">智能</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">空调</a>
+                                    <a href="javascript:;">冰箱</a>
+                                    <a href="javascript:;">洗衣机</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">厨房卫浴</a>
+                                    <a href="javascript:;">生活电器</a>
+                                </h3>
+                            </li>
+                            <li class="listnav-item">
+                                <h3>
+                                    <a href="javascript:;">手机</a>
+                                    <a href="javascript:;">充值</a>
+                                </h3>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <ul class="mainnav">
+                    <li><a href="javascript:;">
+                            <span>首页</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <span>发现</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <span>真划算</span>
+                        </a>
+                        <span class="tag_line"></span>
+                    </li>
+                    <li><a href="javascript:;">
+                            <span>超市</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <span>电器城</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <span>汽车</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <span>家居家装</span>
+                        </a>
+                        <span class="tag_line"></span>
+                    </li>
+                    <li><a href="javascript:;">
+                            <span>智能</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <span>管家</span>
+                        </a></li>
+                    <li><a href="javascript:;">
+                            <span>金融</span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- head -->
+        <div class="breadcrumbs-wrapper">
+            <div class="breadcrumbs-container">
+                <div class="left">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">汽车用品</a>
+                            <i class="icon-crumbs-right"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">车饰精品</a>
+                            <i class="icon-crumbs-right"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">颈枕腰靠</a>
+                            <i class="icon-crumbs-right"></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">卡饰得</a>
+                            <i class="icon-crumbs-right"></i>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:;">卡饰得 四叶草车用枕 冰丝竹炭颈枕 钩花头枕 护颈枕 对装*2个(米色 对装*2个)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="shops-name">
+                        <a href="javascript:;" class="btn-collect">
+                            <i class="icon-collect"></i>
+                            <span>收藏店铺</span>
+                            <i class="icon-arrow"></i>
+                        </a>
+                        <a href="javascript:;" class="btn-service">
+                            <i></i>
+                            在线客服
+                        </a>
+                        <span class="services-score">
+                            <b class="star-gray">
+                                <i class="star-red"></i>
+                            </b>
+                            <em class="score">4.5</em>分
+                        </span>
+                        <a href="javascript:;" class="name">车饰界汽车用品专营店</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gome-container" id="gm-main-info">
+            <div class="prd-firstscreen-left">
+                <div class="magnifier ">
+                    <div class="pic-big">
+                        <div class="jqzoom">
+                            <!-- <img src="https://gfs17.gomein.net.cn/T1zGLmBbhT1RCvBVdK_450.jpg" alt="" class="left_pic actives">
+                            <img src="https://gfs10.gomein.net.cn/T10wCmB5YT1RCvBVdK_450.jpg" alt="" class="left_pic">
+                            <img src="https://gfs10.gomein.net.cn/T1oIKmBvJv1RCvBVdK_450.jpg" alt="" class="left_pic">
+                            <img src="https://gfs12.gomein.net.cn/T1FTEmBsDT1RCvBVdK_450.jpg" alt="" class="left_pic">
+                            <img src="https://gfs12.gomein.net.cn/T1IIWmBbhT1RCvBVdK_450.jpg" alt="" class="left_pic"> -->
+                            <!-- <a href="javascript:;"></a>
+                            <div class="jqZoomPup">
+                            </div> -->
+                        </div>
+                        <div class="zoomdiv">
+                            <img class="bigimg" src="../static/images/pic-b-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pic-list">
+                        <div class="pic-btn">
+                            <a href="javascript:;" class="pic-btn-l">
+                                <b>
+                                    <s></s>
+                                </b>
+                            </a>
+                            <a href="javascript:;" class="pic-btn-r">
+                                <em>
+                                    <i></i>
+                                </em>
+                            </a>
+                        </div>
+                        <div class="pic-small clearfix">
+                            <ul>
+                                <!-- <li class="active sm">
+                                    <a href="javascript:;">
+                                        <img src="../static/images/pic-small-1.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="../static/images/pic-s.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="../static/images/pic-s-3.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="../static/images/pic-s-4.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <img src="../static/images/pic-s-5.jpg" alt="">
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <span class="product-number">商品编号：8002084130</span>
+                    <a href="javascript:;" class="collect">
+                        <i></i>
+                        收藏
+                    </a>
+                    <a href="javascript:;" class="showWish">
+                        <i></i>
+                        提心愿
+                    </a>
+                    <a href="javascript:;" class="shareGold">
+                        <i></i>
+                        分享
+                    </a>
+                </div>
+            </div>
+            <div class="prd-firstscreen-center">
+                <div class="hgroup">
+                    <h1>卡饰得 四叶草车用枕 冰丝竹炭颈枕 钩花头枕 护颈枕 对装*2个(米色 对装*2个)</h1>
+                    <h4>使您的驾乘更加轻松、愉快</h4>
+                </div>
+                <div class="prd-price-1">
+                    <div class="prd-price-other clearfix">
+                        <label class="prd-price-left">国&nbsp;&nbsp;美&nbsp;&nbsp;价</label>
+                        <div class="prd-price-right">
+                            <span class="price">
+                                <em>￥</em>
+                                39
+                            </span>
+                            <a href="javascript:;" class="reduce">降价通知</a>
+                        </div>
+                        <div class="prd-price-flr">
+                            <div class="prd-price-line">|</div>
+                            <div class="prd-price-lineright">
+                                <p>好评度
+                                    <em>100%</em>
+                                </p>
+                                <p class="pincnt">
+                                    <a href="javascript:;">
+                                        <em>56</em>人评价
+                                    </a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prd-properties-1">
+                    <div class="prd-properties-other clearfix">
+                        <label class="prd-properties-left line20">特　　色</label>
+                        <div class="prd-properties-right">
+                            <span class="guanjia">
+                                <em></em>
+                                <b></b>
+                                <a href="javascript:;">管家服务</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class=" prd-properties-other  songzhi clearfix">
+                        <label class="prd-properties-left">送　　至</label>
+                        <div class="prd-properties-right">
+                            <div class="prd-city">
+                                <div class="prd-citys clearfix">
+                                    <div class="address">
+                                        <a href="javascript:;" class="region">
+                                            广东省广州市番禺区东环街道
+                                        </a>
+                                    </div>
+                                    <div class="show-city">
+                                        <div id="citySelect" class="clearfix">
+                                            <a href="javascript:;" id="pct_1" class="active top_pct">
+                                                <b>请选择</b>
+                                                <i></i>
+                                            </a>
+                                            <a href="javascript:;" id="pct_2" class="top_pct">
+                                                <b>请选择</b>
+                                                <i></i>
+                                            </a>
+                                            <a href="javascript:;" id="pct_3" class="top_pct">
+                                                <b>请选择</b>
+                                                <i></i>
+                                            </a>
+                                        </div>
+                                        <div id="cityBox">
+                                            <div id="ctbox_1" class="gctbox clearfix"></div>
+                                            <div id="ctbox_2" class="gctbox clearfix"></div>
+                                            <div id="ctbox_3" class="gctbox clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prd-properties-2">
+                    <div class="m16">
+                        <div class="prd-properties-other  yanse">
+                            <label for="" class="prdLeft">版　　本</label>
+                            <div class="prdRight">
+                                <div class="prdcol prd-img-item">
+                                    <a href="" class="select">
+                                        <img src="https://gfs17.gomein.net.cn/T16wKmB4bT1RCvBVdK_60.jpg" alt="">
+                                        <span>6GB+128GB</span>
+                                    </a>
+                                </div>
+                                <div class="prdcol prd-img-item">
+                                    <a href="" class="select">
+                                        <img src="https://gfs17.gomein.net.cn/T1WGVmBCDv1RCvBVdK_60.jpg" alt="">
+                                        <span>8GB+128GB</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-properties-other nozhu banben">
+                            <label for="" class="prdLeft1">颜　　色</label>
+                            <div class="prdRight">
+                                <div class="prdmod">
+                                    <a href="" class="select">
+                                        探速黑
+                                    </a>
+                                </div>
+                                <div class="prdmod">
+                                    <a href="" class="select">
+                                        竞速蓝
+                                    </a>
+                                </div>
+                                <div class="prdmod">
+                                    <a href="" class="select">
+                                        光速银
+                                    </a>
+                                </div>
+                                <div class="prdmod">
+                                    <a href="" class="select">
+                                        燃力橙
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prd-firstscreen-right">
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- 底部 -->
+        <div id="gome-help">
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="icon-pz"></i>
+                        品质
+                    </a>
+                    <span class="foot-titlt-dot"></span>
+                    <a href="" class="sec-title">正品行货 购物无忧</a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="icon-dj"></i>
+                        品质
+                    </a>
+                    <span class="foot-titlt-dot"></span>
+                    <a href="" class="sec-title">普惠实价 帮你省钱</a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="icon-sd"></i>
+                        品质
+                    </a>
+                    <span class="foot-titlt-dot"></span>
+                    <a href="" class="sec-title">专业配送 按时按需</a>
+                </li>
+            </ul>
+            <div class="gome-help-box">
+                <dl>
+                    <dt>物流配送</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">配送查询</a>
+                            </li>
+                            <li>
+                                <a href="">配送服务</a>
+                            </li>
+                            <li>
+                                <a href="">配送费用</a>
+                            </li>
+                            <li>
+                                <a href="">配送时效</a>
+                            </li>
+                            <li>
+                                <a href="">签收与验货</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付与账户</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">货到付款</a>
+                            </li>
+                            <li>
+                                <a href="">在线支付</a>
+                            </li>
+                            <li>
+                                <a href="">分期付款</a>
+                            </li>
+                            <li>
+                                <a href="">门店支付</a>
+                            </li>
+                            <li>
+                                <a href="">发票制度</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">退换货服务</a>
+                            </li>
+                            <li>
+                                <a href="">退款说明</a>
+                            </li>
+                            <li>
+                                <a href="">专业维修</a>
+                            </li>
+                            <li>
+                                <a href="">延保服务</a>
+                            </li>
+                            <li>
+                                <a href="">家电回收</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>会员专区</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">会员介绍</a>
+                            </li>
+                            <li>
+                                <a href="">优惠券说明</a>
+                            </li>
+                            <li>
+                                <a href="">美豆说明</a>
+                            </li>
+                            <li>
+                                <a href="">配送时效</a>
+                            </li>
+                            <li>
+                                <a href="">商品评价</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购物帮助</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">购物保障</a>
+                            </li>
+                            <li>
+                                <a href="">购物流程</a>
+                            </li>
+                            <li>
+                                <a href="">促销优惠</a>
+                            </li>
+                            <li>
+                                <a href="">焦点问题</a>
+                            </li>
+                            <li>
+                                <a href="">联系我们</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div id="gome-foot">
+            <div id="gome-foot-box">
+                <span>
+                    <i></i>
+                    <p>
+                        <strong>门店服务</strong>
+                        <a href="">国美门店全国共计2000余家</a>
+                    </p>
+                </span>
+                <span class="ued">
+                    <i></i>
+                    <p>
+                        <strong>用户体验</strong>
+                        <a href="">参与用户体验改进计划</a>
+                        <a href="">用户反馈</a>
+                    </p>
+                </span>
+                <div class="qrcode-section">
+                    <em class="code-sm wx">
+                        <i></i>
+                        <p>公众号</p>
+                        <div>
+                            <img src="../static/images/T1kPDvBvZj1RCvBVdK.jpg" alt="">
+                            <i class="icon-triangle"></i>
+                        </div>
+                    </em>
+                    <em class="code-sm wap">
+                        <i></i>
+                        <p>手机站点</p>
+                        <div>
+                            <img src="../static/images/T1gGKvBshT1RCvBVdK.jpg" alt="">
+                            <i class="icon-triangle"></i>
+                        </div>
+                    </em>
+                    <em class="code-bg app">
+                        <img src="../static/images/T1uZdyBXCT1RCvBVdK.jpg" alt="">
+                        <p>扫描下载客户端</p>
+                    </em>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>
+                            <a href="">国美控股集团</a>
+                        </li>
+                        <li>
+                            <a href="">国美管家</a>
+                        </li>
+                        <li>
+                            <a href="">关于国美</a>
+                        </li>
+                        <li>
+                            <a href="">加入我们</a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <a href="">品牌大全</a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <a href="">商品专题</a>
+                        </li>
+                        <li>
+                            <a href="">商品词</a>
+                        </li>
+                        <li>
+                            <a href="">热词搜索</a>
+                        </li>
+                        <li>
+                            <a href="">友情链接</a>
+                        </li>
+                        <li>
+                            <a href="">风险监测</a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <a href="">销售联盟</a>
+                        </li>
+                        <li>
+                            <a href="">商家入驻</a>
+                        </li>
+                        <li>
+                            <a href="">国美分销</a>
+                        </li>
+                    </ul>
+                    <p>
+                        本公司游戏产品适合18岁以上成年人使用 违法和不良信息举报电话：021-39900132
+                        <a href="" class="interDrug">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+                    </p>
+                    <p>
+                        网络食品销售第三方平台提供者备案：沪网食备A0015号
+                        <a href="" class="interDrug">网络文化经营许可证沪网文[2017]5537-436号</a>
+                        <a href="" class="interDrug">增值电信业务经营许可证</a>
+                    </p>
+                    <p>
+                        客服电话:4008113333
+                        <a href="" class="interDrug">沪ICP备11009419号/京ICP备 19011786号</a>
+                        <a href="" class="interDrug">京B2-20191290</a>
+                        <a href="" class="interDrug">经营执照</a>
+                        <a href="" class="interDrug">营业执照</a>
+                        <a href="" class="interDrug">出版物经营许可证</a>
+                    </p>
+                    <p>
+                        ©2000-2020 国美在线电子商务有限公司版权所有
+                        <a href="" class="interDrug tw-w-ico-wrap">
+                            <i class="tw-w-mark-icon"></i>
+                            京公网安备 11010502038379号
+                        </a>
+                    </p>
+                    <div class="gome-foot-credit">
+                        <a href="" class="credit-baxx">
+                            <i></i>
+                            <b>经营性网站备案信息</b>
+                        </a>
+                        <a href="" class="credit-xypj">
+                            <i></i>
+                            <b>可信网站信用评价</b>
+                        </a>
+                        <a href="" class="credit-cxwz">
+                            <i></i>
+                            <b>诚信网站</b>
+                        </a>
+                        <a href="" class="credit-hdjc">
+                            <i></i>
+                            <b>朝阳网络警察</b>
+                        </a>
+                        <a href="" class="credit-wgdj">
+                            <i></i>
+                            <b>网购大家评</b>
+                        </a>
+                        <a href="" class="credit-report">
+                            <i></i>
+                            <b>上海市互联网违法和不良信息举报中心</b>
+                        </a>
+                        <a href="" class="credit-hazar">
+                            <i></i>
+                            <b>网上有害信息举报专区</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../static/js/detail.js"></script>
+    <script src="../static/js/city.js"></script>
+    <script>
+        //   地区
+        var ctbox_1 = document.getElementById("ctbox_1")
+        var ctbox_2 = document.getElementById("ctbox_2")
+        var ctbox_3 = document.getElementById("ctbox_3")
+        var gctbox = document.querySelectorAll('#cityBox .gctbox')
+        var pct_1 = document.getElementById("pct_1")
+        var pct_2 = document.getElementById("pct_2")
+        var pct_3 = document.getElementById("pct_3")
+        var top_pct = document.querySelectorAll('#citySelect .top_pct')
+        var region = document.querySelector(".region")
+      
+        var address=document.querySelector(".prd-city .address")
+        var show_city = document.querySelector(".show-city")
+        address.onclick=function(){
+            show_city.classList.toggle("active")
+            console.log(11);
+        }
+        // 省份
+        var html = ""
+
+        pro.forEach((item, index) => {
+            // console.log(item.province);
+            html += `
+        <span>
+            <a href="javascript:;">${item.province}</a>
+        </span>
+        `
+            ctbox_1.innerHTML = html
+
+        })
+        // var city = ctbox_1.children;
+
+        var city = document.querySelectorAll("#ctbox_1 span");
+
+        city.forEach((item, index) => {
+            //   console.log(item);
+            // 点击省份
+            item.onclick = function () {
+                var str=""
+                console.log(111,item.innerHTML);
+                pct_1.children[0].innerHTML = item.children[0].innerHTML
+                region.innerHTML=item.children[0].innerHTML
+                // pct_2.classList.add("active")
+                // ctbox_2.classList.add("active")
+                top_pct.forEach((list, list_index) => {
+                    for (var i = 0; i < top_pct.length; i++) {
+                        gctbox[i].classList.remove("active")
+                        top_pct[i].classList.remove("active")
+                    }
+                    gctbox[1].classList.add("active")
+                    top_pct[1].classList.add('active')
+
+                })  
+                html = ""
+                // 市
+                pro[index].city.forEach((item1, index1) => {
+                    html += `
+                            <span>
+                            <a href="javascript:;">${item1.n}</a>
+                            </span>
+                            `
+                })
+                // console.log(111,html);
+                
+                ctbox_2.innerHTML = html
+                var city1 = document.querySelectorAll("#ctbox_2 span");
+             
+                console.log(city1);
+                city1.forEach((item2, index2) => {
+                    // 点击市
+                    item2.onclick = function () {
+                    pct_2.children[0].innerHTML=item2.children[0].innerHTML
+                region.innerHTML+=item2.children[0].innerHTML
+
+                        // console.log(888,item2.innerHTML);
+                        top_pct.forEach((list, list_index) => {
+                            for (var i = 0; i < top_pct.length; i++) {
+                                gctbox[i].classList.remove("active")
+                                top_pct[i].classList.remove("active")
+                            }
+                            gctbox[2].classList.add("active")
+                            top_pct[2].classList.add('active')
+
+                        })
+                        html = ""
+                        // 区
+                        pro[index].city[index2].district.forEach((item3, index3) => {
+                            html += `
+                        <span>
+                            <a href="javascript:;">${item3}</a>
+                        </span>
+                        `
+                        })
+                        ctbox_3.innerHTML = html
+                var city2 = document.querySelectorAll("#ctbox_3 span");
+                        city2.forEach((item,index)=>{
+                            item.onclick= function(){
+                                pct_3.children[0].innerHTML = item.children[0].innerHTML
+                                region.innerHTML+=item.children[0].innerHTML
+                            }
+                        })
+                        //    console.log(1111,html);
+                    }
+                })
+            }
+        })
+
+        top_pct.forEach((item, index) => {
+            item.onclick = function () {
+                for (var i = 0; i < top_pct.length; i++) {
+                    gctbox[i].classList.remove("active")
+                    top_pct[i].classList.remove("active")
+                }
+                gctbox[index].classList.add("active")
+                this.classList.add('active')
+            }
+        })
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
